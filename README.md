@@ -2,5 +2,6 @@
 This repository contains static web designs given by Dev Challenges 
 
 
-| Projects                           | Links                                                                                       |
+| Project Name          |  Project View Link |
+| ----------------------| ------------------|                                                                                      |
 | 404 Not Found                      | https://11aj.github.io/Dev_challenges/404-not-found-master/index.html                       | 
