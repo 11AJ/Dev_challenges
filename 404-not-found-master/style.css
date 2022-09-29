@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90% ;
+    margin: auto;
+    margin-top: 50px;
+}
+.container h1{
+    display: inline-block;
+    margin-left: 20px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.left{
+    width: 48%;
+    background-image: url(./Scarecrow.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.right{
+    width: 48%;
+    padding: 100px 50px;
+}
+.right h1{
+    font-size: 65px;
+}
+.inner{
+    width: 70%;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+button{
+    margin-top: 50px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1000px){
+    .container h1{
+        display: inline-block;
+        margin-top: 50px;
+    }
+    .container{
+        width: 90%;
+        margin-top: 0px;
+    }
+    .content{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+    .right{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .right h1{
+        font-size: 60px;
+    }
+    .inner{
+        width: 100%;
+    }
+}
