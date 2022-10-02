@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.header-left{
+    width: 40%;
+}
+.header-left h1{
+    font-size: 40px;
+}
+.header-right{
+    width: 50%;
+}
+.header-right >h3{
+    font-size: 16px;
+}
+.content{
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+.content-left{
+    width: 66%;
+    display: flex;
+}
+.inner-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.inner-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.content-right{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+}
+img{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.photo >span{
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.photo >p{
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 580px) {
+    .header{
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+    .header-left{
+        width: 100%;
+        margin: 10px;
+    }
+    .header-left >h1{
+        font-size: 35px;
+    }
+    .header-right{
+        width: 100%;
+        margin: 10px;
+    }
+    .header-right >h3{
+        font-size: 22px;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    .header-right >p{
+        font-size: 20px;
+    }
+    .content{
+        width: 100%;
+        height: 500px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .photo{
+        width: 250px;
+        height: 250px;
+    }
+    .photo >img{
+        width: 170px;
+        height: 220px;
+    }
+    .photo >span{
+        position: absolute;
+        top: 225px;
+        left: 5px;
+        font-size: 16px;
+    }
+    .photo >p{
+        position: absolute;
+        top: 50px;
+        left: 200px;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .inner-right{
+        margin-top: 70px;
+    }
+    .content-right{
+        width: 100%;
+        flex-direction: row;
+        position: relative;
+        margin-top: -70px;
+    }
+    .Stan{
+        position: absolute;
+        top: 70px;
+        left: 50%;
+    }
+}
